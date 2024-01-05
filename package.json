@@ -13,6 +13,10 @@
     "test:visual:acme": "npx playwright test example-applitools.spec.ts --project=chromium",
     "test:visual:playwright": "npx playwright test example3.spec.ts --project=all-browsers-and-tests"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alin-V/Playwright_Stuff.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

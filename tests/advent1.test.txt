@@ -1,0 +1,14 @@
+import { chromium, test, expect } from "@playwright/test";
+
+test("login test demo", async ({ page }) => {
+  await page.goto(
+    "file://C:/Learning/Playwright/tau-introduction-to-playwright-main/index1.html"
+  );
+  console.log(
+    await page
+      .locator(
+        "file://C:/Learning/Playwright/tau-introduction-to-playwright-main/index1.html"
+      )
+      .textContent()
+  );
+});

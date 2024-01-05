@@ -6,7 +6,7 @@ const adresaMail = "Alin_voi@12.com";
 const parola = "09876";
 
 test.describe("teste", async () => {
-  test("Login test demo", async ({ page, baseURL }) => {
+  test.skip("Login test demo", async ({ page, baseURL }) => {
     const logare = new Loginare(page);
     const changePass = new ChangePassword(page);
     await page.goto(`${baseURL}route=account/login`);

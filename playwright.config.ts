@@ -33,12 +33,14 @@ export default defineConfig({
   // reporter: 'dot',
   // reporter: 'list',
   // reporter: "allure-playwright",
-  reporter: [
-    ["html"],
-    ["list"],
-    ["json", { outputFile: "test-results.json" }],
-    ["allure-playwright"],
-  ],
+  reporter: process.env.CI
+    ? [["junit", { outputFile: "results.xml" }]]
+    : [
+        ["html"],
+        ["list"],
+        ["json", { outputFile: "test-results.json" }],
+        ["allure-playwright"],
+      ],
   // reporter: [
   //   ['html']
   //   ['list'],
@@ -56,9 +58,9 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "on-first-retry",
-    screenshot: "only-on-failure",
-    headless: false,
+    trace: process.env.CI ? "off" : "on-first-retry",
+    screenshot: process.env.CI ? "off" : "only-on-failure",
+    headless: process.env.CI ? true : false,
     // ignoreHTTPSErrors: true,
     // viewport: { width: 1280, height: 720 },
     // video: 'on-first-retry',

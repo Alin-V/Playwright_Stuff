@@ -9,18 +9,22 @@ jobs:
     # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/configuration-reference/#executor-job
     docker:
-      - image: cimg/base:stable
+      - image: mcr.microsoft.com/playwright:v1.40.0-jammy
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
-
+          name: Download dependency
+          command: npm ci
+      - run:
+          name: Run tests
+          command: npm run test
+      - store_test_results:
+          path: results.xml
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  run-test-workflow:
     jobs:
-      - say-hello
+      - run-test

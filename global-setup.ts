@@ -1,7 +1,7 @@
 import { Browser, chromium, test, expect, Page } from "@playwright/test";
 
 async function globalSetup() {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
   const page = await context.newPage();
   await page.goto("https://ecommerce-playground.lambdatest.io/");

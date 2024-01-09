@@ -11,7 +11,7 @@ test.describe("teste", async () => {
     const logare = new Loginare(page);
     const adrese = new AddressBook(page);
     await page.goto(`${baseURL}route=account/login`);
-    await logare.login(adresaMail, parola);
+    // await logare.login(adresaMail, parola);
     await adrese.addressBookLinkClick();
     await adrese.newAddressBtnClick();
     await adrese.addressFirstName("kaka baka");

@@ -11,6 +11,7 @@ require("dotenv").config();
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  globalSetup: "./global-setup",
   testDir: "./tests",
 
   /* Run tests in files in parallel */
@@ -61,6 +62,7 @@ export default defineConfig({
     trace: process.env.CI ? "off" : "on-first-retry",
     screenshot: process.env.CI ? "off" : "only-on-failure",
     headless: process.env.CI ? true : false,
+    storageState: "./LoginAuth.json",
     // ignoreHTTPSErrors: true,
     // viewport: { width: 1280, height: 720 },
     // video: 'on-first-retry',

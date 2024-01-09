@@ -1,0 +1,69 @@
+{
+  "cookies": [
+    {
+      "name": "_gh_sess",
+      "value": "qOREpkI%2FfQeyMeetOb%2FbDDjcqEuB31JO5phZ%2F9%2F9Rm7EOLw60sSLV%2BEbAeLo90EyFzEMOokqgnSPFryTjrg6vq%2FdD1erbtP7NKIvN5q0Op8VIDlXu1zj51RrjBX2eERg0kFeE5%2FPTNM%2FrmcMeWTxuhEOwqzCy%2FRG1tUS%2BR8DpmrcAplHwNFCJLp572Zuhlq8pUbQ3jkXiYVRi5hce7xxDU1mYl7npirzScXtxIzzmyckg%2F9zQVzh%2BMBGZMjKAy1DOXmWfKVuKesNbwtPNSgXcQ%3D%3D--3Bjz%2BfCpYwvIoDnn--ed7qVAN8L9qVrtRCfRBHVw%3D%3D",
+      "domain": "github.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_octo",
+      "value": "GH1.1.902522146.1704725672",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": 1736348072.555899,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "logged_in",
+      "value": "no",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": 1736348072.5562,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "preferred_color_mode",
+      "value": "light",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "tz",
+      "value": "Europe%2FBucharest",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://github.com",
+      "localStorage": [
+        {
+          "name": "bundle-urls",
+          "value": "{\"wp-runtime.js\":\"https://github.githubassets.com/assets/wp-runtime-41bfe71909c1.js\",\"vendors-node_modules_dompurify_dist_purify_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_dompurify_dist_purify_js-6890e890956f.js\",\"vendors-node_modules_stacktrace-parser_dist_stack-trace-parser_esm_js-node_modules_github_bro-a4c183.js\":\"https://github.githubassets.com/assets/vendors-node_modules_stacktrace-parser_dist_stack-trace-parser_esm_js-node_modules_github_bro-a4c183-79f9611c275b.js\",\"vendors-node_modules_github_hydro-analytics-client_dist_analytics-client_js-node_modules_gith-6a10dd.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_hydro-analytics-client_dist_analytics-client_js-node_modules_gith-6a10dd-8837a7c17569.js\",\"ui_packages_soft-nav_soft-nav_ts.js\":\"https://github.githubassets.com/assets/ui_packages_soft-nav_soft-nav_ts-95f0f8f99a8f.js\",\"environment.js\":\"https://github.githubassets.com/assets/environment-30e216bc209e.js\",\"vendors-node_modules_github_selector-observer_dist_index_esm_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_selector-observer_dist_index_esm_js-9f960d9b217c.js\",\"vendors-node_modules_primer_behaviors_dist_esm_focus-zone_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_behaviors_dist_esm_focus-zone_js-086f7a27bac0.js\",\"vendors-node_modules_github_relative-time-element_dist_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_relative-time-element_dist_index_js-c6fd49e3fd28.js\",\"vendors-node_modules_fzy_js_index_js-node_modules_github_combobox-nav_dist_index_js-node_modu-344bff.js\":\"https://github.githubassets.com/assets/vendors-node_modules_fzy_js_index_js-node_modules_github_combobox-nav_dist_index_js-node_modu-344bff-421f7a8c1008.js\",\"vendors-node_modules_delegated-events_dist_index_js-node_modules_github_details-dialog-elemen-29dc30.js\":\"https://github.githubassets.com/assets/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_details-dialog-elemen-29dc30-a2a71f11a507.js\",\"vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_remote-inp-59c459.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_remote-inp-59c459-d0c49521eb35.js\",\"vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_primer_view-co-eb424d.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_primer_view-co-eb424d-1f1d46301f70.js\",\"github-elements.js\":\"https://github.githubassets.com/assets/github-elements-106be3435f7f.js\",\"element-registry.js\":\"https://github.githubassets.com/assets/element-registry-f82c491d5d2a.js\",\"vendors-node_modules_github_catalyst_lib_index_js-node_modules_github_hydro-analytics-client_-978abc0.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_catalyst_lib_index_js-node_modules_github_hydro-analytics-client_-978abc0-15861e0630b6.js\",\"vendors-node_modules_lit-html_lit-html_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_lit-html_lit-html_js-5b376145beff.js\",\"vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_github_alive-client_dist-bf5aa2.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_github_alive-client_dist-bf5aa2-1b562c29ab8e.js\",\"vendors-node_modules_morphdom_dist_morphdom-esm_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_morphdom_dist_morphdom-esm_js-5bff297a06de.js\",\"vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js-c91f4ad18b62.js\",\"vendors-node_modules_color-convert_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_color-convert_index_js-72c9fbde5ad4.js\",\"vendors-node_modules_github_remote-form_dist_index_js-node_modules_scroll-anchoring_dist_scro-231ccf.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_remote-form_dist_index_js-node_modules_scroll-anchoring_dist_scro-231ccf-aa129238d13b.js\",\"vendors-node_modules_github_session-resume_dist_index_js-node_modules_primer_behaviors_dist_e-ac74c6.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_session-resume_dist_index_js-node_modules_primer_behaviors_dist_e-ac74c6-c3eb71941f78.js\",\"vendors-node_modules_primer_behaviors_dist_esm_dimensions_js-node_modules_github_jtml_lib_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_behaviors_dist_esm_dimensions_js-node_modules_github_jtml_lib_index_js-95b84ee6bc34.js\",\"vendors-node_modules_github_paste-markdown_dist_index_esm_js-node_modules_github_quote-select-618d6c.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_paste-markdown_dist_index_esm_js-node_modules_github_quote-select-618d6c-59676cf880fb.js\",\"app_assets_modules_github_updatable-content_ts.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_updatable-content_ts-793542f6e0fb.js\",\"app_assets_modules_github_behaviors_task-list_ts-app_assets_modules_github_onfocus_ts-app_ass-079b43.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_behaviors_task-list_ts-app_assets_modules_github_onfocus_ts-app_ass-079b43-06bdd3d1733f.js\",\"app_assets_modules_github_sticky-scroll-into-view_ts.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_sticky-scroll-into-view_ts-3aa02466adc1.js\",\"app_assets_modules_github_behaviors_ajax-error_ts-app_assets_modules_github_behaviors_include-2e2258.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_behaviors_ajax-error_ts-app_assets_modules_github_behaviors_include-2e2258-70fc444f4dc3.js\",\"app_assets_modules_github_behaviors_commenting_edit_ts-app_assets_modules_github_behaviors_ht-83c235.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_behaviors_commenting_edit_ts-app_assets_modules_github_behaviors_ht-83c235-b85e9f4f1304.js\",\"behaviors.js\":\"https://github.githubassets.com/assets/behaviors-b162f8ca2f90.js\",\"vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-d0256ebff5cd.js\",\"notifications-global.js\":\"https://github.githubassets.com/assets/notifications-global-99d196517b1b.js\",\"vendors-node_modules_optimizely_optimizely-sdk_dist_optimizely_browser_es_min_js-node_modules-089adc.js\":\"https://github.githubassets.com/assets/vendors-node_modules_optimizely_optimizely-sdk_dist_optimizely_browser_es_min_js-node_modules-089adc-7321fd61724b.js\",\"optimizely.js\":\"https://github.githubassets.com/assets/optimizely-0119f81ce34e.js\",\"vendors-node_modules_virtualized-list_es_index_js-node_modules_github_template-parts_lib_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_virtualized-list_es_index_js-node_modules_github_template-parts_lib_index_js-878844713bc9.js\",\"vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-c537341.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-c537341-b92f5ddd2dcf.js\",\"app_assets_modules_github_ref-selector_ts.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_ref-selector_ts-92d4050cac07.js\",\"codespaces.js\":\"https://github.githubassets.com/assets/codespaces-6fa341f5eb89.js\",\"vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_mini-throt-08ab15.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_mini-throt-08ab15-5c0a626f08d8.js\",\"vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_github_mini-th-55cf52.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_github_mini-th-55cf52-26041abdd865.js\",\"repositories.js\":\"https://github.githubassets.com/assets/repositories-654188b6c408.js\",\"vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-0e9dbe.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-0e9dbe-2a3d291c8bfe.js\",\"topic-suggestions.js\":\"https://github.githubassets.com/assets/topic-suggestions-ec84fce8ff33.js\",\"code-menu.js\":\"https://github.githubassets.com/assets/code-menu-2658b004279a.js\",\"react-lib.js\":\"https://github.githubassets.com/assets/react-lib-1fbfc5be2c18.js\",\"vendors-node_modules_primer_octicons-react_dist_index_esm_js-node_modules_primer_react_lib-es-2e8e7c.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_octicons-react_dist_index_esm_js-node_modules_primer_react_lib-es-2e8e7c-8c382c96424c.js\",\"vendors-node_modules_primer_react_lib-esm_Box_Box_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_react_lib-esm_Box_Box_js-ebfceb11fb57.js\",\"vendors-node_modules_primer_react_lib-esm_Button_Button_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_react_lib-esm_Button_Button_js-8dba6638f78f.js\",\"vendors-node_modules_primer_react_lib-esm_ActionList_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_react_lib-esm_ActionList_index_js-64637eb4b092.js\",\"vendors-node_modules_primer_react_lib-esm_Button_IconButton_js-node_modules_primer_react_lib--23bcad.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_react_lib-esm_Button_IconButton_js-node_modules_primer_react_lib--23bcad-1c568d4e3b06.js\",\"ui_packages_react-core_create-browser-history_ts-ui_packages_react-core_deferred-registry_ts--ebbb92.js\":\"https://github.githubassets.com/assets/ui_packages_react-core_create-browser-history_ts-ui_packages_react-core_deferred-registry_ts--ebbb92-f862877dad23.js\",\"keyboard-shortcuts-dialog.js\":\"https://github.githubassets.com/assets/keyboard-shortcuts-dialog-7bd03c20c417.js\",\"vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-94fd67.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-94fd67-99519581d0f8.js\",\"sessions.js\":\"https://github.githubassets.com/assets/sessions-1164ee5f3e37.js\",\"light.css\":\"https://github.githubassets.com/assets/light-38f1bf52eeeb.css\",\"dark.css\":\"https://github.githubassets.com/assets/dark-56010aa53a8f.css\",\"primer-primitives.css\":\"https://github.githubassets.com/assets/primer-primitives-971c6be3ec9f.css\",\"primer.css\":\"https://github.githubassets.com/assets/primer-6b3d1b701ef1.css\",\"global.css\":\"https://github.githubassets.com/assets/global-802ea8e97740.css\",\"github.css\":\"https://github.githubassets.com/assets/github-3c453fd2e244.css\",\"repository.css\":\"https://github.githubassets.com/assets/repository-2e5f0ce2e282.css\",\"code.css\":\"https://github.githubassets.com/assets/code-e1d76210b382.css\"}"
+        },
+        {
+          "name": "jump_to:page_views",
+          "value": "{\"repository:microsoft/playwright\":{\"lastVisitedAt\":1704725673,\"visitCount\":1}}"
+        }
+      ]
+    }
+  ]
+}

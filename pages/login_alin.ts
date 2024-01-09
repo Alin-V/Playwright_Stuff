@@ -4,7 +4,6 @@ export default class Loginare {
   //constructor
   constructor(public page: Page) {}
 
-  
   async login(email: string, password: string) {
     await this.insertEmail(email);
     await this.insertPass(password);

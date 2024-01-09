@@ -1,14 +1,26 @@
 import { chromium, test, expect } from "@playwright/test";
 
-test.skip("positive test", async () => {
-  const browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext();
-  const page = await context.newPage();
+test("Registrate new already present user negative test ", async ({
+  page,
+  baseURL,
+  context,
+}) => {
+  //const browser = await chromium.launch({ headless: false });
+  //clear cookies to not be logged in
+
+  //const context = await browser.newContext();
+  //const page = await context.newPage();
+  await context.clearCookies();
   await page.goto("https://ecommerce-playground.lambdatest.io/");
   await page.hover(
     "//a[@role='button']//span[@class='title'][normalize-space()='My account']"
   );
+  //await expect(page.locator("//a[contains(text(),'Logout')]")).toBeVisible();
+  // await page.locator("//a[contains(text(),'Logout')]").click();
   await page.getByRole("link", { name: "Register" }).click();
+  // await page.hover(
+  //   "//a[@role='button']//span[@class='title'][normalize-space()='My account']"
+  // );
   await page.getByPlaceholder("First Name").click();
   await page.getByPlaceholder("First Name").fill("cucu1");
   await page.getByPlaceholder("Last Name").click();
@@ -25,13 +37,15 @@ test.skip("positive test", async () => {
   await page.getByText("I have read and agree to the").click();
   await page.getByRole("button", { name: "Continue" }).click();
   await page.waitForTimeout(5000);
- // await page.getByRole("link", { name: "Continue" }).click();
+  // await page.getByRole("link", { name: "Continue" }).click();
+  await expect(page.locator("div.alert.alert-danger.alert-dismissible"))
+    .toBeVisible;
+  await expect(
+    page.locator("div.alert.alert-danger.alert-dismissible")
+  ).toContainText("Warning: E-Mail Address is already registered!");
 });
 
-test("negative test", async () => {
-  const browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext();
-  const page = await context.newPage();
+test.skip("Registrate new ", async ({ page, baseURL, context }) => {
   await page.goto("https://ecommerce-playground.lambdatest.io/");
   await page.hover(
     "//a[@role='button']//span[@class='title'][normalize-space()='My account']"

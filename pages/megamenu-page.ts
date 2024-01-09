@@ -19,8 +19,17 @@ export default class Megamenu {
   async firstProduceHover() {
     await this.page.locator("(//img[@class='lazy-load'])[1]").hover();
   }
+  async addToCartVisible() {
+    await this.page
+      .locator("(//button[@title='Add to Cart']//i)[1]")
+      .waitFor({ state: "visible" });
+    //await this.page.locator("(//button[@title='Add to Cart']//i)[1]").click();
+  }
   async addToCartClick() {
-    await this.page.locator("(//i[@class='fas fa-shopping-cart'])[1]").click();
+    // await this.page
+    //   .locator("(//i[@class='fas fa-shopping-cart'])[1]")
+    //   .waitFor({ state: "visible" });
+    await this.page.locator("(//button[@title='Add to Cart']//i)[1]").click();
   }
   async visibleToastCart() {
     const toast = this.page.locator("//a[contains(.,'View Cart')]");

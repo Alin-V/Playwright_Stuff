@@ -12,24 +12,24 @@ jobs:
     timeoutInMinutes: 60
     pool:
       vmImage: "ubuntu-latest"
-steps:
-      - task: Node@0
+
+    - task: Node@0
         inputs:
           versionSpec: "16.x"
         displayName: "Install Node.js"
  
-      - script: |
+    - script: |
           npm ci
         displayName: "Install dependencies"
  
-      - script: |
+    - script: |
           npx playwright install --with-deps
         displayName: "Install Playwright Browsers"
  
-      - script: |
+    - script: |
           npx playwright test
         displayName: "Run Playwright tests"
  
-      - publish: $(System.DefaultWorkingDirectory)/playwright-report
+    - publish: $(System.DefaultWorkingDirectory)/playwright-report
         artifact: playwright-report
         condition: always()

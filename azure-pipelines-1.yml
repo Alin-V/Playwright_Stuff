@@ -3,35 +3,30 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
-
 variables:
   CI: true
 trigger:
-- master
+  - master
 
 jobs:
-- job: test
-  timeoutInMinutes: 60
-  pool:
-    vmImage: "ubuntu-latest"
-  steps:
-  - task: NodeTool@0
-    inputs:
-      versionSpec: "16.x"
-    displayName: "Install Node.js"
+  - job: test
+    timeoutInMinutes: 60
+    pool:
+      vmImage: "ubuntu-latest"
+    steps:
+      - task: NodeTool@0
+        inputs:
+          versionSpec: "16.x"
+        displayName: "Install Node.js"
 
-  - script: |
-      npm ci
-    displayName: "Install dependencies"
+      - script: |
+          npm ci
+        displayName: "Install dependencies"
 
-  - script: |
-      npx playwright install --with-deps
-    displayName: "Install Playwright Browsers"
+      - script: |
+          npx playwright install --with-deps
+        displayName: "Install Playwright Browsers"
 
-  - script: |
-      npx playwright test
-    displayName: "Run Playwright tests"
-
-  - publish: $(System.DefaultWorkingDirectory)/playwright-report
-    artifact: playwright-report
-    condition: always()
+      - script: |
+          npm run test
+        displayName: "Run Playwright tests"

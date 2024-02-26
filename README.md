@@ -1,6 +1,9 @@
 ﻿# Playwright_Stuff
 
  install nodejs 
+
+ 
+ Install typescript: npm install -g typescript
  
  install playwright:  npm init playwright@latest
 

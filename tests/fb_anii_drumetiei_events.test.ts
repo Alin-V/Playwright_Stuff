@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, Locator } from "@playwright/test";
 import fs from "fs";
 
 test("get the events content", async ({ page }) => {
@@ -24,6 +24,7 @@ test("get the events content", async ({ page }) => {
     .split("Event by Anii Drumeției")
     .map((event) => event.trim())
     .filter((event) => event !== "");
+
   // Find all links in the event elements
   async function getEventLinks(page) {
     const hrefs = await page.evaluate(() => {
@@ -38,8 +39,22 @@ test("get the events content", async ({ page }) => {
 
   const eventLinks = await getEventLinks(page);
 
-  // Save event content to a JSON file
-  const data = { events: eventsArray, eventLinks };
+  //select all images
+
+  async function getEventSrc(eventTextContent1: Locator) {
+    eventTextContent1 = await page.locator(
+      "//div[@class='x1yztbdb']/following-sibling::div[1]"
+    );
+    const srcs = await eventTextContent1.evaluate(() => {
+      const images = Array.from(document.querySelectorAll("img"));
+      return images.map((img) => img.src);
+    });
+    return srcs;
+  }
+
+  const eventLinksImages = await getEventSrc(page);
+//write data in Json file
+  const data = { events: eventsArray, eventLinks, eventLinksImages };
   const jsonData = JSON.stringify(data, null, 2);
 
   fs.writeFileSync("events.json", jsonData);

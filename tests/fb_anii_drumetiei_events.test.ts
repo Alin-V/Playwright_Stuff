@@ -1,8 +1,12 @@
 import { test, expect, Locator } from "@playwright/test";
 import fs from "fs";
+import myuserdata from "../events.json";
 
 test("get the events content", async ({ page }) => {
   await page.goto("https://www.facebook.com/anii.drumetiei/events/");
+  expect(
+    await page.getByRole("button", { name: "Decline optional cookies" })
+  ).toBeVisible();
   await page.getByRole("button", { name: "Decline optional cookies" }).click();
   await page.getByLabel("Close").click();
 
@@ -53,7 +57,7 @@ test("get the events content", async ({ page }) => {
   }
 
   const eventLinksImages = await getEventSrc(page);
-//write data in Json file
+  //write data in Json file
   const data = { events: eventsArray, eventLinks, eventLinksImages };
   const jsonData = JSON.stringify(data, null, 2);
 

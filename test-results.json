@@ -88,19 +88,23 @@
   },
   "suites": [
     {
-      "title": "fb_anii_drumetiei_events.test.ts",
-      "file": "fb_anii_drumetiei_events.test.ts",
+      "title": "fb_anii_tickets.test.ts",
+      "file": "fb_anii_tickets.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "get the events content",
+          "title": "Read JSON Array Name",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
-              "annotations": [],
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow"
+                }
+              ],
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
@@ -108,24 +112,69 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1779,
+                  "duration": 11608,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Events content saved to events.json\n"
+                      "text": "https://www.facebook.com/events/374967885488960/\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'https://booktes.com/bilet/drumetie-pentru-copii-mici-in-jurul-satelor-din-muntii-cindrel'\u001b[39m,\n  \u001b[32m'Find Tickets'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/events/912824133633681/\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'https://embed.booktes.com/embed/ticket/drumetie-in-muntii-cindrel-la-refugiul-canaia'\u001b[39m,\n  \u001b[32m'Find Tickets'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/events/1615491445857065/\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'https://booktes.com/bilet/drumetie-pentru-femei-in-tara-colibelor-cu-degustare-de-bere-locala-sadu'\u001b[39m,\n  \u001b[32m'Find Tickets'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/events/237144802818593/\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'https://embed.booktes.com/embed/ticket/drumetie-in-fagaras-cascada-balea-si-muchia-buteanului-la-apus'\u001b[39m,\n  \u001b[32m'Find Tickets'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/events/444213064600377/\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'https://embed.booktes.com/embed/ticket/drumetie-in-familie-la-poiana-pensionarilor-cu-carnati-la-jar'\u001b[39m,\n  \u001b[32m'Find Tickets'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/events/775416590747262/\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'https://embed.booktes.com/embed/ticket/drumetie-malancrav-copsa'\u001b[39m,\n  \u001b[32m'Find Tickets'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/events/418192557317006/\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'https://embed.booktes.com/embed/ticket/drumetie-in-muntii-fagaras-la-cabana-barcaciu-si-pe-muchia-scarisoarei'\u001b[39m,\n  \u001b[32m'Find Tickets'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/events/768321571839398/\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'https://booktes.com/bilet/drumetie-prin-poiana-trandafirilor-spre-vf-magura-si-cetatea-cisnadioara'\u001b[39m,\n  \u001b[32m'Find Tickets'\u001b[39m\n]\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-28T15:37:46.454Z",
+                  "startTime": "2024-02-29T15:44:05.852Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "ba61c48fd753829647ee-a9eeff2f6ca63de5f779",
-          "file": "fb_anii_drumetiei_events.test.ts",
+          "id": "911f0b130d3e9d0e8fa6-b6ea938ae3f794cba61f",
+          "file": "fb_anii_tickets.test.ts",
           "line": 4,
           "column": 5
         }
@@ -134,8 +183,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-02-28T15:37:38.365Z",
-    "duration": 10442.261,
+    "startTime": "2024-02-29T15:43:58.857Z",
+    "duration": 19258.293999999998,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

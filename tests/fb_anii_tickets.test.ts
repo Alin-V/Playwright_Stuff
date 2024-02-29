@@ -6,9 +6,9 @@ test("Read JSON Array Name", async ({ page }) => {
   await page.goto("https://www.facebook.com/");
   await page.getByTestId("cookie-policy-manage-dialog-decline-button").click();
   await page.getByTestId("royal_email").click();
-  await page.getByTestId("royal_email").fill("blackotta@gmail.com");
+  await page.getByTestId("royal_email").fill("xxxxxx@gmail.com");
   await page.getByTestId("royal_pass").click();
-  await page.getByTestId("royal_pass").fill("rumburak1");
+  await page.getByTestId("royal_pass").fill("zzzzzzzzzz");
   await page.getByTestId("royal_login_button").click();
 
   await page.goto("https://www.facebook.com/anii.drumetiei/events/");

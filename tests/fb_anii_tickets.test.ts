@@ -63,32 +63,8 @@ test("Read JSON Array Name", async ({ page }) => {
       // Write the updated data to tickets.json
       const data = JSON.stringify(jsonData, null, 2);
       fs.writeFileSync("tickets.json", data);
-
-      // const data = JSON.stringify({ firstLink });
-      // fs.("tickets.json", data);
     }
-    //page.close();
-    // await page.getByLabel("Close").click();
-    // // Wait for navigation to complete
-    // // await page.waitForNavigation();
-
-    // // // Find the element containing the text "booktes"
-    // const locatorContainingBooktes = await page.locator(
-    //   'page.locator:has-text("booktes")'
-    // );
-
-    // if (locatorContainingBooktes) {
-    //   // Get the text content of the locator
-    //   const text = await locatorContainingBooktes.textContent();
-    //   console.log(text);
-    //   // Write the text content to tickets.json
-    //   // await page.evaluate((text) => {
-    //   //   const fs = require("fs");
-    //   //   const data = JSON.stringify({ ticket: text });
-    //   //   fs.writeFileSync("tickets.json", data);
-    //   // }, text);
-    // }
-    // Go back to the event page
+  
   }
   page.close();
 });

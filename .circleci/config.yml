@@ -19,7 +19,7 @@ jobs:
           command: npm ci
       - run:
           name: Run tests
-          command: npm run test
+          command: npm run test:rom
       - store_test_results:
           path: results.xml
 # Orchestrate jobs using workflows

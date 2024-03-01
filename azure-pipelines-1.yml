@@ -28,5 +28,5 @@ jobs:
         displayName: "Install Playwright Browsers"
 
       - script: |
-          npm run test
+          npm run test:rom
         displayName: "Run Playwright tests"

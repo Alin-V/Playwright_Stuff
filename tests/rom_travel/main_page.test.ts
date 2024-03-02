@@ -15,12 +15,14 @@ test.describe("Main page tests", () => {
     await page.getByRole("button", { name: "Refuză" }).click();
     await page.locator(".oax_language_switcher_close").click();
     // expect (await page.locator("div.oax_logo_head").toBeVisible());
-    await expect(page.locator("a[title='Ghid tuirstic']")).toBeVisible();
-    await expect(page.locator("a[title='Ghid tuirstic']")).toHaveText(
-      "Ghid tuirstic"
+    await expect(
+      page.locator("(//a[@title='Ghid turistic'])[1]")
+    ).toBeVisible();
+    await expect(page.locator("(//a[@title='Ghid turistic'])[1]")).toHaveText(
+      "Ghid turistic"
     );
     // await page.getByRole("link", { name: "Ghid tuirstic" }).click();
-    await page.locator("//a[contains(text(),'Ghid tuirstic')]").click();
+    await page.locator("(//a[@title='Ghid turistic'])[1]").click();
     await expect(page).toHaveURL(
       "https://romaniatravel.guide/ro/ghid-de-calatorie/romania/1036991/"
     );

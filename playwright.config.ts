@@ -36,9 +36,9 @@ export default defineConfig({
   reporter: process.env.CI
     ? [["junit", { outputFile: "results.xml" }]]
     : [
-        ["html"],
+        ["html", { outputFolder: "report" }],
         ["list"],
-        ["json", { outputFile: "test-results.json" }],
+        // ["json", { outputFile: "test-results.json" }],
         ["allure-playwright"],
       ],
   // reporter: [

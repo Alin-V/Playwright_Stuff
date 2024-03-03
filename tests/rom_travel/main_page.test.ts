@@ -62,7 +62,6 @@ test.describe("Main page tests", () => {
     await page.getByRole("button", { name: "Refuză" }).click();
     await page.locator(".oax_language_switcher_close").click();
     //await page.locator(".oax_modal_bg").click();
-
     await expect(page.locator("a[title='Despre noi']")).toBeVisible();
     //await page.getByRole("link", { name: "Despre noi" }).click();
     await page.locator("//a[contains(text(),'Despre noi')]").click();

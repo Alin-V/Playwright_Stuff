@@ -37,6 +37,7 @@ test("get the events content", async ({ page }) => {
       );
 
       return links.map((link) => link.href as string);
+      return;
     });
     return hrefs;
   }

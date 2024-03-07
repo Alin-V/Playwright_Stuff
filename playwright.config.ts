@@ -60,7 +60,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: process.env.CI ? "off" : "on-first-retry",
     screenshot: process.env.CI ? "off" : "only-on-failure",
-    headless: process.env.CI ? true : false,
+    headless: process.env.CI ? true : true,
     storageState: "./LoginAuth.json",
     // ignoreHTTPSErrors: true,
     // viewport: { width: 1280, height: 720 },
@@ -89,7 +89,7 @@ export default defineConfig({
         // viewport: { width: 1280, height: 720 },
       },
     },
-    /*
+
     {
       name: "firefox",
       use: {
@@ -105,7 +105,7 @@ export default defineConfig({
         ...devices["Desktop Safari"],
       },
     },
-*/
+
     // {
     //   name: "all-browsers-and-tests",
     //   use: {

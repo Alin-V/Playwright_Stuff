@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+
 test.describe("Main page tests", () => {
   test.slow();
   test("1.Login to main page, expect Romania Travel Guide logo to be visible", async ({
@@ -110,6 +111,7 @@ test.describe("Main page tests", () => {
       "https://romaniatravel.guide/ro/list/bisericile-din-nordul-moldovei-incluse-in-patrimoniul-unesco/118692693/"
     );
   });
+
   test("test 8.1 ", async ({ page }) => {
     await page.goto("https://romaniatravel.guide/ro/");
     await page.getByRole("button", { name: "Refuză" }).click();

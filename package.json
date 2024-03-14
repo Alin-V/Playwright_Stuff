@@ -7,6 +7,7 @@
     "postinstall": "npx playwright install",
     "test": "npx playwright test tests/ --project=chromium",
     "test:rom": "npx playwright test tests/rom_travel/ --project=chromium",
+    "test:accesibility": "npx playwright test tests/accesibility/ --project=chromium",
     "test:e2e": "npx playwright test tests/ --project=chromium",
     "test:e2e:all": "npx playwright test tests --project=all-browsers-and-tests",
     "test:e2e:ci": "CI=1 npx playwright test --project=ci --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL",

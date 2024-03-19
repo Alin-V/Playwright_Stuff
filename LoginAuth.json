@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "OCSESSID",
-      "value": "111aa8e12b8c57b0df7c247fea",
+      "value": "cc8bb2448593c0d7aa5cfbc593",
       "domain": "ecommerce-playground.lambdatest.io",
       "path": "/",
       "expires": -1,
@@ -15,7 +15,7 @@
       "value": "en-gb",
       "domain": ".ecommerce-playground.lambdatest.io",
       "path": "/",
-      "expires": 1713012788.522293,
+      "expires": 1713432087.521897,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -25,7 +25,7 @@
       "value": "USD",
       "domain": ".ecommerce-playground.lambdatest.io",
       "path": "/",
-      "expires": 1713012788.522456,
+      "expires": 1713432087.521995,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"

@@ -1,4 +1,4 @@
-import { chromium, expect, test } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 
 test("GET list example", async ({ request }) => {
   const response = await request.get(

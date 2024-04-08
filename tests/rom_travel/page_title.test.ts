@@ -97,7 +97,7 @@ const domains = [
 ];
 
 test.describe("Ghid calatorie page tests", () => {
-  test.slow();
+  // test.slow();
   domains.forEach(async ({ domain, title, lista }) => {
     test(`Renders correct title for ${domain}`, async ({ page }) => {
       await page.goto(domain);

@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 test.describe("Ghid calatorie page tests", () => {
-  test.slow();
+ // test.slow();
   test("test1", async ({ page }) => {
     await page.goto(
       "https://romaniatravel.guide/ro/ghid-de-calatorie/romania/1036991/"

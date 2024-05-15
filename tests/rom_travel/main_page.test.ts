@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("Main page tests", () => {
-  test.slow();
+  //test.slow();
   test("1.Login to main page, expect Romania Travel Guide logo to be visible", async ({
     page,
   }) => {

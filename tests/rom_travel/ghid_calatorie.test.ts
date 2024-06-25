@@ -355,12 +355,16 @@ test.describe("Ghid calatorie page tests", () => {
     );
     await page.getByRole("button", { name: "Refuză" }).click();
     await page.locator(".oax_language_switcher_close").click();
-    await page
-      .getByRole("link", { name: " Colecții Centre de echitație" })
-      .scrollIntoViewIfNeeded();
-    await page
-      .getByRole("link", { name: " Colecții Centre de echitație" })
-      .click();
+    await page.locator("div.oax-id-176231195 > div:nth-child(2) > strong:nth-child(2) > span:nth-child(1)").scrollIntoViewIfNeeded();
+    // await page
+    //   .getByRole("link", { name: " Colecții Centre de echitație" })
+      //div.oax-id-176231195 > div:nth-child(2) > strong:nth-child(2) > span:nth-child(1)
+      //.scrollIntoViewIfNeeded();
+
+      await page.locator("div.oax-id-176231195 > div:nth-child(2) > strong:nth-child(2) > span:nth-child(1)").click();
+    // await page
+    //   .getByRole("link", { name: " Colecții Centre de echitație" })
+    //   .click();
     await expect(page).toHaveURL(
       "https://romaniatravel.guide/ro/list/centre-de-echitatie/176231195/"
     );
@@ -372,12 +376,14 @@ test.describe("Ghid calatorie page tests", () => {
     );
     await page.getByRole("button", { name: "Refuză" }).click();
     await page.locator(".oax_language_switcher_close").click();
-    await page
-      .getByRole("link", { name: " Colecții Parcuri de distrac" })
-      .scrollIntoViewIfNeeded();
-    await page
-      .getByRole("link", { name: " Colecții Parcuri de distrac" })
-      .click();
+    // await page
+    //   .getByRole("link", { name: " Colecții Parcuri de distrac" })
+    //   .scrollIntoViewIfNeeded();
+    // await page
+    //   .getByRole("link", { name: " Colecții Parcuri de distrac" })
+    //   .click();
+    await page.locator("div.oax-id-179090672 > div:nth-child(2) > strong:nth-child(2) > span:nth-child(1)").scrollIntoViewIfNeeded();
+    await page.locator("div.oax-id-179090672 > div:nth-child(2) > strong:nth-child(2) > span:nth-child(1)").click();
     await expect(page).toHaveURL(
       "https://romaniatravel.guide/ro/list/parcuri-de-distractii-si-aventura/179090672/"
     );
